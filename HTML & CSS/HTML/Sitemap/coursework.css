@@ -1,0 +1,146 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+.compress {
+    
+    
+    width:55;
+}
+
+.image{
+    display:none;
+    position:absolute;
+}
+
+body {
+ background: linear-gradient(to right, #c2ccd6 , #757A7A);
+ background-repeat: no-repeat;
+ background-size:cover;
+ font-size: 16px;
+ font-weight: 400;
+ color: black;
+ font-family: Arial;
+
+ }
+ 
+.svgJS g:hover polyline,
+.svgJS g:hover line {
+	fill: none;
+	stroke-width: 2;
+	stroke: black;
+}
+
+#
+.svgJS g:hover g text,
+.svgJS g:hover text {
+	font-weight: bold;
+}
+
+.svgJS g:hover polygon,
+.svgJS g:hover rect,
+.svgJS g:focus polygon,
+.svgJS g:focus rect {
+	fill: hsla(24, 20%, 50%,.3);
+	stroke: black;
+	stroke-width: 2;
+}
+
+
+
+/*....................Thumbnail.........................*/
+
+img {
+  border: 1px solid 1#3055D; /*  border */
+  border-radius: 4px;  /* Rounded border */
+  padding: 3px; /* Some padding */
+  width: 90px; /* Set a small width */
+}
+
+/* Add a hover effect (blue shadow) */
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+/*.......................................*/
+
+.box {
+ background: linear-gradient(to right, #c2ccd6, #13055D);
+	vertical-align: middle;
+	min-height: 5px;
+	padding-top:1px;
+	padding-bottom:1px;
+	border-bottom: 1px #13055D;
+	width:100%;
+	display: inline-block;
+	padding-right:2.1px;
+	font-family: Arial;
+	font-size:16x;
+	color:black;
+}
+  
+  /*.......................................*/
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */  
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; 
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #blue;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, change colour*/
+input[type=submit]:hover {
+  background: linear-gradient(to right, #c2ccd6, #13055D);
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background: linear-gradient(to left, #c2ccd6, #13055D);
+  padding: 20px;
+}
+
+
+
+
+/********************************************/
+
+.footer {
+  position: auto;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: linear-gradient(to right, #c2ccd6, #13055D);
+  color: white;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  padding: 2;
+}	  
+
+
+
+
+
+
+/***********************************************/
+
+
+
+
+

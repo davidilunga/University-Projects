@@ -1,0 +1,113 @@
+<html>
+<head>
+<link href="gallery.css" rel="stylesheet">
+
+<!--------------------------------------Navbar---------------------------------->
+
+</head>
+
+
+
+<div class="header">
+     <h1>Shah Jahan and his Love Story </h1>
+	 
+</div>
+		
+<div class="topnav">
+       <a href = "../Homepage.html">Main Homepage</a>
+	   <a href="index.html">Home</a>
+       <a href="Facts1.html">Facts</a>
+       <a href="gallery.html">Gallery</a>
+	   <a href = "../Tokyo/index.html">Tokyo</a>
+	   <a href = "../AboutLondon(CourseworkStudent3).html">London</a>
+	   <a href = "../Pakistan/Pakistan.html">Pakistan</a>
+       
+	  
+</div>
+<title> Taj Mahal</title>
+
+</head>
+
+<!--------------------------------------slideshow in the body---------------------------------->
+
+<body>
+
+<h2 class="quote">Look deep into nature, and then you will understand everything better.</h2>
+
+<div class="quote" style="max-width:500px">
+  <img class="Slides" src="a.jpg" style="width:150%" height="50%">
+  <img class="Slides" src="b.jpg" style="width:150%"height="50%">
+  <img class="Slides" src="c.jpg" style="width:150%"height="50%">
+  
+  <img class="Slides" src="d.jpg" style="width:150%"height="50%">
+  <img class="Slides" src="e.jpg" style="width:150%"height="50%">
+  <img class="Slides" src="f.jpg" style="width:150%"height="50%">
+  <img class="Slides" src="g.jpg" style="width:150%"height="50%">
+  
+  <img class="Slides" src="h.jfif" style="width:150%" height="50%">
+  <img class="Slides" src="i.jfif" style="width:150%" height="50%">
+  <img class="Slides" src="j.jfif" style="width:150%" height="50%">
+  <img class="Slides" src="k.jfif" style="width:150%" height="50%"> 
+  <img class="Slides" src="l.jfif" style="width:150%" height="50%">
+  <img class="Slides" src="m.jfif" style="width:150%" height="50%">
+  <img class="Slides" src="n.jfif" style="width:150%" height="50%">
+
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("Slides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 5000); // this will Change the image after every 5 seconds
+}
+</script>
+
+
+
+
+<marquee behavior ="alternate" scrollamont="1"> <h2>
+ A Song that gives full justice to Shah Jahan and his love story. </h2>
+</marquee>
+
+<audio src="bg.mp3" controls>
+
+</audio>
+
+
+<p style="color:blue;">Shah Jahan, at first named Prince Khurram, was conceived in the year 1592.
+He was the child of Jehangir, the fourth Mughal ruler of India and the grandson of Akbar the Great.
+In 1607 while walking around the Meena Bazaar, joined by a string of groveling subjects, Shah Jahan got a look at a young lady peddling silk and glass dabs. 
+It was all consuming, instant adoration and the young lady was Mumtaz Mahal, who was known as Arjumand Banu Begum around then.
+Around then, he was 14 years of age and she, a Muslim Persian princess, was 15. In the wake of meeting her, Shah Jahan returned to his dad and announced that he needed to wed her.
+The match got solemnized following five years i.e., in the year 1612. </P>
+
+<p style="color:green;">It was in the year 1628 that Shah Jahan turned into the Emperor and endowed Arjumand Banu with the imperial seal. 
+He likewise presented her with the title of Mumtaz Mahal, which means the "Gem of the Palace". 
+In spite of the fact that Shah Jahan had different spouses additionally, at the same time, Mumtaz Mahal was his most loved and
+went with him all over the place, even on military crusades. In the year 1631, when Mumtaz Mahal was bringing forth their 
+fourteenth tyke, she passed on because of certain entanglements. While Mumtaz was on her deathbed, Shah Jahan guaranteed 
+her that he could never remarry and will fabricate the most extravagant catacomb over her grave. </p>
+
+<p style="color:purple;">It is said that Shah Jahan was so grief stricken after her demise that he requested the court into grieving for a long time. 
+At some point after her demise, Shah Jahan embraced the errand of raising the world's most delightful landmark in the memory of his dearest.
+It took 22 years and the work of 22,000 laborers to develop the landmark. At the point when Shah Jahan kicked the bucket in 1666, his body was put in a tomb 
+alongside the tomb of Mumtaz Mahal. This eminent landmark came to be known as "Taj Mahal" and now tallies among the Seven Wonders of the World. 
+This is the genuine story of the Taj Mahal of India, which has hypnotized numerous individuals with its entrancing magnificence.</p>
+
+
+<div class="footer">
+<p>&copy; 2019 By Travel and Explore 
+<br>This page was created by: Student 2 : Khalood Maqsood
+<br>E-mail address of student 2: w1687385@my.westminster.ac.uk </p>
+</div>
+</body>
+</html>

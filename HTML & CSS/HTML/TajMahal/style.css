@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+  background-image:url('taj.jpg');
+}
+
+
+/* Styling the header.... */
+h1 {
+  background-color: #ffdab9;
+  padding: 16px;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 28pt;
+
+}
+/* Styling the top navigation bar.... */
+.topnav {
+  overflow: hidden;
+  background-color:#a83461;
+}
+/* Styling the topnav links... */
+.topnav a {
+  float: left;
+  display: block;
+  color: #ffa5ca;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Changing color on hover.... */
+.topnav a:hover {
+  background-color: #f44289;
+  color: black;
+}
+.header {
+  background-color: #ffdab9;
+  padding:16px;
+  text-align:center;
+  font-size: 18pt;
+  font-family:Arial;
+}
+
+span:before{
+	content:'Welcome';
+	animation: animate infinite 8s;
+} 
+@keyframes animate
+{   
+    0%
+	{
+	content:'Welcome';
+	}
+	25%
+	{
+	content:'Willkommen';
+	}
+	50%
+	{
+	content:'Bienvenido';
+	}
+	75%
+	{
+	content:'Bem vinda';
+	}
+	100%
+	{
+    content:'Khush Amdeed';
+	}
+} 
+
+
+ .column {
+  float: left;
+  width: 33.33%;
+  background-color:peach;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+} 
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #ffe3b7;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #ffe3b7;
+}
+
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #ffdab9;
+  color: black;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+}	  

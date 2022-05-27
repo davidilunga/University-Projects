@@ -1,0 +1,225 @@
+html, body {
+	margin:0;
+	padding:0;
+	width:100%;
+	height:100%;
+	font-family: 'Playfair Display', serif;
+	overflow:hidden;
+	background-color: rgb(41, 41, 61,0.9);
+}
+ #myid {
+	 font-size:1em;
+ }
+.logo {
+	line-height:40px;
+	float:left;
+	margin: 1.2 em 0 0 2.2 em;
+	font-weight:bolder;
+	color:#fff;
+}
+.nav {
+	line-height: 40px;
+	position:absolute;
+	right:5%;
+	float:right;
+	background-color:rgb(255, 255, 255,0.3);
+	margin-top:2%;
+	width:1050px;
+	border-radius: 50px 10px;
+}
+
+.nav ul li {
+	list-style:none;
+	display:inline-block;
+	color:#fff;
+	padding-right: 36px;
+	float:right;
+}
+.social-media {
+	position:absolute;
+	transform:translateY(-50%);
+	top:51%;
+	background: rgb(41, 41, 61,0.9);
+	width:160px;
+	height:105vh;
+	transition: ease-in-out 0.2s;
+}
+.social-media ul li {
+	list-style:none;
+	color:#fff;
+	padding-top:20px;
+	padding-bottom:20px;
+
+}
+.social-media:hover {
+	background-color:#29293d;
+	width:1400px;
+}
+.side-strip {
+	position:absolute;
+	top:50%;
+	transform:translateY(-50%);
+	left:5%;
+	transform:rotate(90deg);
+	letter-spacing:4px;
+}
+.header {
+	position:absolute;
+	top: 38%;
+	left:46%;
+	width:500px;
+	height:200px;
+	transform:translate(-50%, -50%);
+	background:rgb(255, 255, 255,0.7);
+	padding-left:80px;
+	padding-right:100px;
+	padding-bottom:20px;
+	border-radius: 30px 10px;
+	transition: ease-in-out 0.2s;
+}
+.header h1 {
+	color:#29293d;
+	padding-left:40px;
+	letter-spacing:1px;
+	font-size:45px;
+	font-family: 'Playfair Display ', serif ;
+}
+.header p {
+	color: #29293d;
+	font-weight:lighter;
+}
+
+.header button {
+	margin-top: 12px;
+	border:none;
+	border-radius: 50px 20px;
+	padding: 16px 40px;
+	background: #fff;
+	color:#29293d;
+	letter-spacing:4px;
+	font-weight:600;
+	font-size:12px;
+}
+.wrapper {
+	border:1px solid rgb(41, 41, 61,0.9);
+	height:100%;
+	background: url(../images/PresentationPage/plane.jpg)  50% 50%;
+	background-size:cover;
+	z-index:-1000;
+	background-position:fixed;
+}
+
+.students {
+	margin-top:-150px;
+	margin-left:850px;
+	padding:1px;
+	width:400px;
+	color: #fff;
+	position:relative;
+	background-color:rgb(41, 41, 61,0.9);
+	text-align:center;
+	border-radius: 50px 10px;
+	font-family: 'Playfair Display ', serif ;
+}
+
+.students h4  {
+	padding-left:30px;
+	text-align:left;
+	font-weight:lighter;
+}
+
+.font-change {
+	margin-left:250px;
+	margin-top:500px;
+	background:rgb(255, 255, 255,0.7);
+	border-radius: 10px 50px;
+	width:200px;
+	height:50px;
+	display:flex;
+
+	
+	
+	
+}
+
+
+.font-change button {
+	margin-left:30px;
+	width:50px;
+	height:50px;
+	border-radius: 10px;
+	background:rgb(255, 255, 255,0.9);
+	transition:ease-in 0.2s;
+}	
+
+.font-change button:hover {
+	cursor:pointer;
+	background:rgb(41, 41, 61,0.9);
+	color:#fff;
+}
+
+#decrese {
+	font-size:8px;
+}
+
+/*----------------------------------Footer-----------------------------------------*/
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+ background-color:rgb(41, 41, 61,0.9);
+  color: white;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+}
+
+.footer a {
+	color: white;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

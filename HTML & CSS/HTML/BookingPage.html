@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name "viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+		<link rel="stylesheet" href="../CSS/NavBar.css">
+		<link rel ="stylesheet" href="../CSS/BookingCSS.css"/>
+		<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,900" rel="stylesheet"> 
+		<title>Holiday Booking</title>
+		<style>
+	<!---element needed for font size change buttons-->
+	
+		#myid {
+		font-size:1em;
+		
+		}
+		
+		.font-button {
+		margin-top:10px;
+		padding:10px;
+		border-radius:10px;
+		}
+	</style>
+		
+	</head>
+	
+	<body>
+	<nav class="header">
+			<ul>
+				<a href="../HTML/HomePresentation.html"><img src="../images/PresentationPage/logo5.png" width="100"></a>
+				<li><a href="../HTML/Homepage.html">Home</a></li>
+				<li><a href="../HTML/CommentPage.html">Comments</a></li>														<!-- Navigation bar at the top of the page-->
+				<li><a href="../HTML/BookingPage.html">Booking</a></li>
+				<li><a href="../HTML/Quiz(CourseworkStudent3).html">Quiz</a></li>
+				<li><a href="../HTML/StudentInfo.html">Student Details</a>
+					<ul>
+						<li><a href = "../CVs/KhaloodMaqsoodCV.html">Khalood Maqsood</a></li>
+						<li><a href = "../CVs/JustynaBuckoCV.html">Justyna Bucko</a></li>		<!--  all pagees are linked to a website-->
+						<li><a href = "../CVs/DavidIlungaCV.html">David Ilunga</a></li>
+						<li><a href = "../CVs/AtiyaHaiCV.html">Atiya Tul Hai</a></li>
+					</ul>
+				</li>
+				<li><a href="#">About Countries</a>
+					<ul>
+						<li><a href = "../HTML/TajMahal/index.html">Taj Mahal</a></li>
+						<li><a href = "../HTML/Tokyo/index.html">Tokyo</a></li>
+						<li><a href = "../HTML/AboutLondon(CourseworkStudent3).html">London</a></li>
+						<li><a href = "../HTML/Pakistan/Pakistan.html">Pakistan</a></li>
+					</ul>
+				</li>
+				<li><a href = "../HTML/Sitemap/coursework.html">Sitemap</a></li>
+			</ul>
+		</nav>
+	<div class="container">
+		<div class="side-strip">
+		</div>
+		<div class="main">
+			<div class="box">
+				<div class="booking">
+					<h2><a href ="#Booking">Book</a></h2>
+					<p> _ </p>
+				</div>
+				<div class="discover">
+					<h2><a href ="#Discover">Discover</a></h2>
+					<p> - </p>
+				</div>
+			</div>	
+		</div>
+			
+		<div id="book">
+			<form action="">
+					<div class="form-group1">
+						<h2 class="heading" id = "Booking">Book now</h2>
+							<div class="controls">
+								<label for="name">Name</label>
+								<input type="text" id="name" class="floatLabel" name="name">
+							</div>
+							<div class="controls">
+								<label for="email">Email</label>
+								<input type="text" id="email" class="floatLabel" name="email">
+							</div>       
+							<div class="controls">
+								<label for="phone">Phone</label>
+								<input type="tel" id="phone" class="floatLabel" name="phone">
+							</div>
+  
+					<div class="form-group2">
+						<h2 class="heading">Details</h2>
+							<div class="grid">
+							<div class="controls">
+								<label for="destination" id="des">Destination</label>
+								<input type="destination" id="destination" class="floatLabel" name="destination">
+							</div>
+									<div class="controls">
+										<label for="arrive" class="label-date"><i class="fa fa-calendar"></i>&nbsp;&nbsp;Arrive</label>
+										<input type="date" id="arrive" class="floatLabel" name="arrive" value="<?php echo date('Y-m-d'); ?>">
+									</div>      
+									<div class="controls">
+										<label for="depart" class="label-date"><i class="fa fa-calendar"></i>&nbsp;&nbsp;Depart</label>
+										<input type="date" id="depart" class="floatLabel" name="depart" value="<?php echo date('Y-m-d'); ?>" />
+									</div>      
+						</div>
+						
+						<div class="grid">
+								<div class="controls">
+									<i class="fa fa-sort"></i>
+										<label for="fruit"><i class="fa fa-male"></i>&nbsp;&nbsp;People</label>
+										<select class="floatLabel">
+											<option value="blank"></option>
+											<option value="1">1</option>
+											<option value="2" selected>2</option>
+											<option value="3">3</option>
+										</select>
+											
+								</div>   
+								<footer>
+								<button type="submit" value="Submit" >Submit</button>
+								</footer>
+						</div>  
+					</div> 
+				</form>
+		</div>
+	</div>
+	
+	
+	<div id="offer">
+	
+		<div class="options" id = "Discover">
+		
+			<div class="option">
+				<img src="../images/BookingPage/paris.jpg" alt="paris" id="paris" height="300">
+				<div class="description">
+					<h2>Paris</h2>
+					<div class="price">
+						£<span id = "whitePrice">300</span>
+					</div>
+				</div>
+			</div>
+			
+			<div class="option">
+				<img src="../images/BookingPage/tokyo.jpg" alt="tokyo" id="tokyo" height="300">
+				<div class="description">
+				<h2>Tokyo</h2>
+					<div class="price">
+						£<span id = "whitePrice">580</span>
+					</div>
+				</div>
+			</div>
+			
+			<div class="option">
+				<img src="../images/BookingPage/rio.jpg" alt="rio" id="rio" height="300">
+				
+				<h2>Rio de Janerio</h2>
+					<div class="price">
+						£<span id = "whitePrice">600</span>
+					</div>
+				
+			</div>
+			
+		</div>
+			
+			<div class="labelOrder">Your Order:
+				<div id="orderDescription">
+				</div>
+				<div class="option" id="order">
+				</div>
+			</div>
+			
+		
+			
+			<form onReset = "resetOrder()">
+			
+			<div class="menu">
+			
+				<label for = "holidayOptions">Holiday Options: </label>
+				
+					<select name = "holidayOptions" id = "holidayOptions" >
+						<option value = "pleaseSelect">Please Select</option>
+						<option value = "EconomicClass">Economic Class</option>
+						<option value = "BuisnessClass">Buisness Class</option>
+						<option value = "PremiumClass">Premium Class</option>
+					</select>
+					
+				<label for = "destination">Holiday destination: </label>
+						<input type = "radio" name = "destination" value = "paris" id = "paris"><label for = "paris">Paris</label>
+						<input type = "radio" name = "destination" value = "rio" id = "wrio"><label for = "rio">Washington</label>
+						<input type = "radio" name = "destination" value = "tokyo" id = "tokyo"><label for = "tokyo">Tokyo</label>
+						<input type = "button" name = "order" value = "Place your booking" id = "placeBooking">
+						<input type = "reset" name = "reset" value = "Reset your booking" id = "restartBooking">
+			</div>
+			</form>
+	</div>
+	<div class = "footer">
+			<p>&copy; 2019 By Travel and Explore 
+					<br>This page was created by: Student 1 : Justyna Bucko
+					<br>E-mail address of student 1:<address><a href="mailto:w1692858@my.westminster.ac.uk">w1692858@my.westminster.ac.uk</a></address></p>
+		</div>
+	</body>
+</html>

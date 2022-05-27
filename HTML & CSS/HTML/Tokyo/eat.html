@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	
+		<meta charset="UTF-8"/>
+		<meta name "viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+		<link rel ="stylesheet" href="../../CSS/TokyoCSS.css"/>
+		<title>Visit Tokyo!</title>
+	</head>
+	<body>
+	<script>
+	function increse() {
+		document.getElementById("myid").style.fontSize="1.2em";
+	}
+	function normalise() {
+		document.getElementById("myid").style.fontSize="1em";
+	}
+	function decrese() {
+		document.getElementById("myid").style.fontSize="0.7em";
+	}
+	</script>
+	<style>
+	.container-eat {
+	z-index:-1;
+	position:absolute;
+	top:20%;
+	left:30%;
+	max-width:700px;
+	color:#555;
+	padding-top:20px;
+	padding-bottom:100px;
+	}
+
+	.container-eat h1 {
+	color:#8f3d3d;
+	font-size:50px;
+	padding-bottom:20px;
+	padding-top:20px;
+	}
+	
+	.container-eat img {
+	padding-top:20px;
+	 -webkit-filter: grayscale(100%);
+	filter: grayscale(40%);
+	transition:ease 0.5s;
+	}
+	
+	.container-eat img:hover {
+	 -webkit-filter: grayscale(100%);
+	filter: grayscale(0%);
+	cursor:pointer;
+	}
+	</style>
+	
+	<div id="myid">
+	<div class="navbar">
+			<div id="logo">
+				<img src="">
+			</div>
+		<ul>
+				<li><a href="../Homepage.html">Main Homepage</a></li>
+				<li><a href="index.html">Tokyo Homepage</a></li>
+				<li><a href="discover.html">Discover</a></li>
+				<li><a href="eat.html">Eat</a></li>
+				<li><a href="shop.html">Shop</a></li>
+				<li><a href="havefun.html">Have Fun!</a></li>
+			</ul>
+	</div>
+	<div class="container-eat">
+		<div class="Sushi">
+			<h1>Sushi</h1>
+			<p>Sushi (寿司 or 鮨) is the most famous Japanese dish outside of Japan, and one of the most popular dishes among the Japanese themselves. In Japan, sushi is usually enjoyed on special occasions, such as a celebration.
+			<br>
+			<br>
+			During the Edo period, "sushi" refered to pickled fish preserved in vinegar. Nowadays sushi can be defined as a dish containing rice which has been prepared with sushi vinegar.</p>
+			<img src="../../images/Tokyo/food.jpg" height="120">
+			<img src="../../images/Tokyo/food3.jpg" height="120">
+			<img src="../../images/Tokyo/food5.jpg" height="120">
+			<img src="../../images/Tokyo/sushi1.jpg" height="120">
+		</div>
+		<div class="Street food">
+			<h1>Street Food</h1>
+			<p>There are lots and lots of casual dining restaurants of all types found across Tokyo. While restaurants are easy to find just about anywhere in the city, good places to go for a large variety of them are around train stations, entertainment districts and the restaurant floors of most department stores, where there is usually a good selection of restaurants ranging from Japanese cuisine to international dining.
+			<br>
+			<br>
+			Izakaya are the most common type of casual dining establishments and are good places to try a variety of Japanese foods. They can be found in droves around train stations and entertainment districts, and serve popular food items such as yakitori, sashimi and of course beer. The following are a few casual dining areas around Tokyo that are well known for their atmosphere:</p>
+			<img src="../../images/Tokyo/tempura.jpg" height="130">
+			<img src="../../images/Tokyo/streetfood.jpg" height="130">
+			<img src="../../images/Tokyo/food1.jpg" height="130">
+		</div>
+		<div class="Fine Dining">
+			<h1>Fine Dining</h1>
+			<p>Tokyo is well known for its fine dining, and has the highest number of Michelin-starred restaurants of any city in the world. Fine dining restaurants are often found on the top floors of skyscrapers and major hotels, and the cuisine served at these restaurants ranges from traditional Japanese to international and fusion fare. 
+			<br>
+			<br>
+			Of course, they tend to be priced accordingly, and some restaurants may require advance reservations. The following are a few districts that are known for their fine dining establishments.</p>
+			<img src="../../images/Tokyo/fine1.jpg" height="155">
+			<img src="../../images/Tokyo/fine2.jpg" height="155">
+			<img src="../../images/Tokyo/fine3.jpg" height="155">
+		</div>
+	</div>
+		<div class="menu">
+						<div class="Discover">
+				<h2>Discover</h2>
+				<ul>
+					<li><a href="#culture">Culture</a></li>
+					<li><a href="#nature">Nature</a></li>
+				</ul>
+			</div>
+			<div class="Eat">
+				<h2>Eat</h2>
+				<ul>
+					<li><a href="eat.html">Sushi</a></li>
+					<li><a href="eat.html">Street Food</a></li>
+					<li><a href="eat.html">Fine Dining</a></li>
+				</ul>
+			</div>
+		
+			<div class="Shop">
+				<h2>Shop</h2>
+				<ul>
+					<li><a href="shop.html">Shopping malls</a></li>
+					<li><a href="shop.html">Traditional Bazars</a></li>
+				</ul>
+			</div>
+		
+			<div class="HaveFun">
+				<h2>Have fun!</h2>
+				<ul>
+					<li><a href="havefun.html">Events</a></li>
+					<li><a href="havefun.html">Festivals</a></li>
+				</ul>
+			</div>
+			
+			<div class="font-change">
+			
+				<button onclick="increse()" id="increse">
+					Aa
+				</button>
+				
+				<button onclick="normalise()" id="normalise">
+					Aa
+				</button>
+				
+				<button onclick="decrese()" id="decrese">
+					Aa
+				</button>
+			
+			</div>
+		</div>
+		<footer>
+		</footer>
+		</div>
+		</body>
+	</html>

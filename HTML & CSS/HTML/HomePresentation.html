@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name "viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+		<link rel ="stylesheet" href="../CSS/HomePresentationCSS.css"/>
+		<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,900"" rel="stylesheet"> 
+		<title>Tourism</title>
+	</head>
+	<body>
+	<div id="myid">
+		<div class="wrapper">
+			<div class="nav">
+				<ul>
+					<li><p id="p">University of Westminster</li>
+				</ul>
+			</div>
+			<div class="social-media">
+				<ul>
+					<li><img src="../images/PresentationPage/logo5.png" width="100"></li>
+					<li><a id="a">Meet</a></li>
+					<li><a id="a1">Our</a></li>
+					<li><a id="a2">Team</a></li>
+				</ul>
+			</div>
+			
+			<div class="side-strip">
+				<span>ADVENTURE FILL SOULS</span>
+			</div>
+			
+			<div class="header">
+				<h1 id="h1"> Tourism </h1>
+				<p id="p1"> <i>The world is a book and those who do not travel read only one page.</p>
+				<button>EXPLORE</button>
+			</div>
+			
+			<div class="font-change">
+				<button onclick="increse()" id="increse">
+					+
+				</button>
+				
+				<button onclick="normalise()" id="normalise">
+					Aa
+				</button>
+				
+				<button onclick="decrese()" id="decrese">
+					-
+				</button>
+			</div>
+		
+			<div class="students">
+				<div class="student1">
+					<h4 id="h41">student 1 - Justyna Bucko - page creator</h4>
+				</div>
+				<div class="student2">
+					<h4 id="h42">student 2 - Khalood Maqsood</h4>
+				</div>
+				<div class="student3">
+					<h4 id="h43">student 3 - David Ilunga</h4>
+				</div>
+				<div class="student4">
+					<h4 id="h44">student 4 - Atiya Hai </h4>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class = "footer">
+			<p>&copy; 2019 By Travel and Explore 
+					<br>This page was created by: Student 1 : Justyna Bucko
+					<br>E-mail address of student 1:<address><a href="mailto:w1692858@my.westminster.ac.uk">w1692858@my.westminster.ac.uk</a></address></p>
+		</div>
+	</body>
+			<script type="text/javascript">
+				function load() {
+					setTimeout("window.open('Homepage.html', '_self');", 5000);
+				}
+				function increse() {
+					document.getElementById("myid").style.fontSize="1.2em";
+				}
+				function normalise() {
+					document.getElementById("myid").style.fontSize="1em";
+				}
+				function decrese() {
+					document.getElementById("myid").style.fontSize="0.9em";
+				}
+			</script>
+		<body onload="load()"> 
+	
+</html>

@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  background-image:url('pic2.jpg');
+}
+}
+
+/* Styling the header.... */
+.header {
+  background-color: #ffdab9;
+  padding: 20px;
+  text-align: center;
+}
+/* Styling the top navigation bar.... */
+.topnav {
+  overflow: hidden;
+  background-color:#a83461;
+}
+/* Styling the topnav links... */
+.topnav a {
+  float: left;
+  display: block;
+  color: #ffa5ca;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Changing color on hover.... */
+.topnav a:hover {
+  background-color: #f44289;
+  color: black;
+}
+.header {
+  background-color: #ffdab9;
+  padding:20px;
+  text-align:center;
+}
+ .column {
+  float: left;
+  width: 33.33%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+} 
+ 
+.footer {
+  background-color: #ffdab9;
+  text-align: center;
+  padding: 10px;
+}

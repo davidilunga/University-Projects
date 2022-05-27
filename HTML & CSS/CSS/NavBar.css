@@ -1,0 +1,78 @@
+/* Navigation Bar / Header */
+
+.header {
+	background-color: #29293D;
+	vertical-align: middle;
+	min-height: 5px;
+	padding-top:1px;
+	padding-bottom:1px;
+	border-bottom: 1px solid black;
+	width:100%;
+	display: inline-block;
+	padding-right:2.1px;
+	text-align:center;
+}
+	
+.header img{
+	float:left;
+	height: 45px;
+	width:75px;
+	vertical-align:middle;
+	padding:1px;
+	padding:5px 15px;
+}
+
+.header ul{
+	float:left;
+	width:100%;
+}
+.header ul li {
+	float:left;
+	display: inline-block;
+	font-size: 15px;
+	list-style-type: none;
+	position:relative;
+	width:12%;
+}
+
+.header	ul li a{
+	display:block;
+	color: white;
+	font-size:15px;
+	padding:22px 14px;
+	text-decoration:none;
+	vertical-align: middle;
+}
+
+.header	ul li a:hover{
+	background: linear-gradient(to right, #4b4b6d, #29293D)
+	
+}
+
+.header	ul li ul{
+	display:none;
+	position:absolute;
+	background-color: #29293D;
+	border-radius:4px;
+}
+
+.header	ul li:hover ul{
+	display:block;
+}
+
+.header	ul li ul li{
+	position:relative;
+	width:auto;
+}
+
+.header	ul li ul li a {
+	padding:10px 14px;
+	position:relative;
+	min-width:200px;
+	border-radius:4px;
+}
+
+.header	ul li ul li a:hover {
+	background-color:#4b4b6d;
+	
+}

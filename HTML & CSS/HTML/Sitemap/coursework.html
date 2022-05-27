@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="WEB CW 1403">
+<link rel="stylesheet" href="../../CSS/NavBar.css">
+<link href="coursework.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,900"" rel="stylesheet"> 
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+
+function increse() {
+	
+		document.getElementById("myid").style.fontSize="1.2em";
+	
+	}
+	
+	function normalise() {
+		document.getElementById("myid").style.fontSize="1em";
+	}
+	
+	function decrese() {
+		document.getElementById("myid").style.fontSize="0.7em";
+	}
+ 
+function bigImg(x) {
+  x.style.height = "200px";
+  x.style.width = "200px";
+}
+
+function normalImg(x) {
+  x.style.height = "80px";
+  x.style.width = "70px";
+}
+	
+</script>
+
+<script >
+  $(function(){
+       // When a color is chosen, set it as the background for this page
+       $("#color").change(function(){
+          // Set the background to that color
+          $("body").css('background', $(this).val());
+       });
+  });
+</script>
+
+<script >
+  $(function(){
+       // When a color is chosen, set it as the text colour for this page
+       $("#textcolour").change(function(){
+          // Set the background to that color
+          $("body").css('color', $(this).val());
+		  $("text").css('color', $(this).val());
+       });
+  });
+</script>
+
+<head>
+<title> Tourism Website</title>
+<meta charset="utf-8">
+<nav class="header">
+			<ul>
+				<a href="../../HTML/HomePresentation.html"><img src="../../images/PresentationPage/logo5.png" width="100"></a>
+				<li><a href="../../HTML/Homepage.html">Home</a></li>
+				<li><a href="../../HTML/CommentPage.html">Comments</a></li>														<!-- Navigation bar at the top of the page-->
+				<li><a href="../../HTML/BookingPage.html">Booking</a></li>
+				<li><a href="../Quiz(CourseworkStudent3).html">Quiz</a></li>
+				<li><a href="../../HTML/StudentInfo.html">Student Details</a>
+					<ul>
+						<li><a href = "../../CVs/KhaloodMaqsoodCV.html">Khalood Maqsood</a></li>
+						<li><a href = "../../CVs/JustynaBuckoCV.html">Justyna Bucko</a></li>
+						<li><a href = "../../CVs/DavidIlungaCV.html">David Ilunga</a></li>
+						<li><a href = "../../CVs/AtiyaHaiCV.html">Atiya Tul Hai</a></li>
+					</ul>
+				</li>
+				<li><a href="#">About Countries</a>
+					<ul>
+						<li><a href = "../../HTML/TajMahal/index.html">Taj Mahal</a></li>
+						<li><a href = "../../HTML/Tokyo/index.html">Tokyo</a></li>
+						<li><a href = "../AboutLondon(CourseworkStudent3).html">London</a></li>
+						<li><a href = "../../HTML/Pakistan/Pakistan.html">Pakistan</a></li>
+					</ul>
+				</li>
+				<li><a href = "../../HTML/Sitemap/coursework.html">Sitemap</a></li>
+			</ul>
+		</nav>
+	<style>
+<!---element needed for font size change buttons-->
+	
+		#myid {
+		
+		font-size:1em;
+		
+		}
+		
+		
+		.font-button {
+		
+		
+		
+		margin-top:10px;
+		padding:10px;
+		border-radius:10px;
+		}
+		button{
+			width:5%;
+		}
+
+</style>
+</head>
+
+<br>
+<br>
+<br>
+
+
+<body>
+  <div id = "myid">
+  <!-- A Drop down list with a collection of colors -->
+  <div class="font-button">
+			
+				<button onclick="increse()" id="increse">
+					+
+				</button>
+				
+				<button onclick="normalise()" id="normalise">
+					Aa
+				</button>
+				
+				<button onclick="decrese()" id="decrese">
+					-
+				</button>
+			
+</div>
+  <label for "colour"> Background Colour Change: </label> <br>
+  <select id='color'>
+  
+    <!-- Notice the value properties will be the actual background values to use (e.g colors or URL values) -->
+    <option value=' linear-gradient(to right, #c2ccd6 , #757A7A)'>Original</option>
+    <option value='red'>Red</option>
+    <option value='yellow'>Yellow</option>
+    <option value='blue'>Blue</option>
+	<option value='pink'>Pink</option>
+	<option value='white'>White</option>
+	<option value='black'>Black</option>
+	<option value = '#AFF4B5'>Lime Green</option>
+	<option value = '#AFF2F4'> Sky Blue </option>
+  </select>
+  
+  <label for "colour"> Text Colour Change: </label> <br>
+  <select id='textcolour'>
+    <!-- Notice the value properties will be the actual background values to use (e.g colors or URL values) -->
+    <option value='Black'>Original</option>
+    <option value='#80212E'>Maroon</option>
+    <option value='yellow'>Yellow</option>
+    <option value='#80216D'>Purple</option>
+	<option value='pink'>Pink</option>
+	<option value='white'>White</option>	
+	<option value = '#AFF4B5'>Lime Green</option>
+	<option value = '#AFF2F4'> Sky Blue </option>
+  </select>
+
+<svg class="svgJS" height="650" width="1800">
+<g class="groupId1">
+	<rect x="750" y="30" height="50" width="150" 
+	      stroke="black" fill="none" stroke-width="2" />
+	<text fill="#000" font-size="14" x="825" y="60"
+	      font-family="Arial" text-anchor="middle">
+	      <a href="../../HTML/HomePresentation.html">Home Presentation</a></text>
+  </g>
+<g class="groupId2" >
+	<line class="shapeId2" stroke="black" stroke-width="2" 
+		  x1="825" y1="80" x2="825" y2="100"></line>
+	<line class="shapeId2" stroke="black" stroke-width="2" 
+		  x1="285" y1="100" x2="1290" y2="100"></line>
+	<line class="shapeId2" stroke="black" stroke-width="2" 
+		  x1="285" y1="100" x2="285" y2="130"></line>
+	<line class="shapeId2" stroke="black" stroke-width="2" 
+		  x1="485" y1="100" x2="485" y2="130"></line>
+	<line class="shapeId2" stroke="black" stroke-width="2" 
+		  x1="685" y1="100" x2="685" y2="130"></line>
+	<line class="shapeId2" stroke="black" stroke-width="2" 
+		  x1="885" y1="100" x2="885" y2="130"></line>
+	<line class="shapeId2" stroke="black" stroke-width="2" 
+		  x1="1085" y1="100" x2="1085" y2="130"></line>
+	<line class="shapeId2" stroke="black" stroke-width="2" 
+		  x1="1290" y1="100" x2="1290" y2="130"></line>
+	</g>
+<g class="groupId3" >
+	<rect x="215" y="130" height="50" 
+          width="150" stroke="black" fill="none" 
+          stroke-width="2" />
+	<text fill="#000" font-size="14" x="285" y="160"
+          font-family="Arial" text-anchor="middle">
+          <a href="../../HTML/Homepage.html">Home</a></text>
+	</g>
+<g class="groupId3" >
+	<rect x="415" y="130" height="50" 
+          width="150" stroke="black" fill="none" 
+          stroke-width="2" />
+	<text fill="#000" font-size="14" x="485" y="160"
+          font-family="Arial" text-anchor="middle">
+          <a href = "../../HTML/CommentPage.html">Comments Page</a></text>
+	</g>
+<g class="groupId3" >
+	<rect x="615" y="130" height="50" 
+          width="150" stroke="black" fill="none" 
+          stroke-width="2" />
+	<text fill="#000" font-size="14" x="685" y="160"
+          font-family="Arial" text-anchor="middle">
+          <a href="../../HTML/BookingPage.html">Booking Page</a></text>
+	</g>
+ <g class="groupId3" >
+	<rect x="815" y="130" height="50" 
+          width="150" stroke="black" fill="none" 
+          stroke-width="2" />
+	<text fill="#000" font-size="14" x="885" y="160"
+          font-family="Arial" text-anchor="middle">
+          <a href="../Quiz(CourseworkStudent3).html">Quiz</a></text>
+	</g>
+<g class="groupId3" >
+	<rect x="1015" y="130" height="50" 
+          width="150" stroke="black" fill="none" 
+          stroke-width="2" />
+	<text fill="#000" font-size="14" x="1085" y="160"
+          font-family="Arial" text-anchor="middle">
+          <a href="../../HTML/StudentInfo.html">Student Details</a></text>
+	</g>
+<g class="groupId3" >
+	<rect x="1215" y="130" height="50" 
+          width="150" stroke="black" fill="none" 
+          stroke-width="2" />
+	<text fill="#000" font-size="14" x="1285" y="160"
+          font-family="Arial" text-anchor="middle">
+          About Countries</text>
+	</g>
+
+<!-- Student Details -->
+
+<g class="groupId2" >
+	<line class="shapeId2" stroke="black" stroke-width="2" 
+		  x1="1090" y1="180" x2="1090" y2="230"></line>
+  </g>
+<g class="groupId3" >
+	<rect x="1015" y="230" height="50" 
+          width="150" stroke="black" fill="none" 
+          stroke-width="2" />
+	<text fill="#000" font-size="14" x="1090" y="260"
+          font-family="Arial" text-anchor="middle">
+          <a href = "../../CVs/KhaloodMaqsoodCV.html">Khalood Maqsood</a></text>
+	</g>
+
+<g class="groupId2" >
+	<line class="shapeId2" stroke="black" stroke-width="2" 
+		  x1="1090" y1="280" x2="1090" y2="330"></line>
+  </g>
+<g class="groupId3" >
+	<rect x="1015" y="330" height="50" 
+          width="150" stroke="black" fill="none" 
+          stroke-width="2" />
+	<text fill="#000" font-size="14" x="1090" y="360"
+          font-family="Arial" text-anchor="middle">
+          <a href = "../../CVs/JustynaBuckoCV.html">Justyna Bucko</a></text>
+	</g>
+
+<g class="groupId2" >
+	<line class="shapeId2" stroke="black" stroke-width="2" 
+		  x1="1090" y1="380" x2="1090" y2="430"></line>
+  </g>
+<g class="groupId3" >
+	<rect x="1015" y="430" height="50" 
+          width="150" stroke="black" fill="none" 
+          stroke-width="2" />
+	<text fill="#000" font-size="14" x="1090" y="460"
+          font-family="Arial" text-anchor="middle">
+          <a href = "../../CVs/DavidIlungaCV.html">David Ilunga</a></text>
+	</g>
+
+<g class="groupId2" >
+	<line class="shapeId2" stroke="black" stroke-width="2" 
+		  x1="1090" y1="480" x2="1090" y2="530"></line>
+  </g>
+<g class="groupId3" >
+	<rect x="1015" y="530" height="50" 
+          width="150" stroke="black" fill="none" 
+          stroke-width="2" />
+	<text fill="#000" font-size="14" x="1090" y="560"
+          font-family="Arial" text-anchor="middle">
+          <a href = "../../CVs/AtiyaHaiCV.html">Atiya Tul Hai</a></text>
+	</g>
+	
+<!-- About Countries -->
+
+<g class="groupId2" >
+	<line class="shapeId2" stroke="black" stroke-width="2" 
+		  x1="1290" y1="180" x2="1290" y2="230"></line>
+  </g>
+<g class="groupId3" >
+	<rect x="1215" y="230" height="50" 
+          width="150" stroke="black" fill="none" 
+          stroke-width="2" />
+	<text fill="#000" font-size="14" x="1290" y="260"
+          font-family="Arial" text-anchor="middle">
+          <a href = "../../HTML/TajMahal/index.html">Taj Mahal</a></text>
+	</g>
+
+<g class="groupId2" >
+	<line class="shapeId2" stroke="black" stroke-width="2" 
+		  x1="1290" y1="280" x2="1290" y2="330"></line>
+  </g>
+<g class="groupId3" >
+	<rect x="1215" y="330" height="50" 
+          width="150" stroke="black" fill="none" 
+          stroke-width="2" />
+	<text fill="#000" font-size="14" x="1290" y="360"
+          font-family="Arial" text-anchor="middle">
+          <a href = "../../HTML/Tokyo/index.html">Tokyo</a></text>
+	</g>
+
+<g class="groupId2" >
+	<line class="shapeId2" stroke="black" stroke-width="2" 
+		  x1="1290" y1="380" x2="1290" y2="430"></line>
+  </g>
+<g class="groupId3" >
+	<rect x="1215" y="430" height="50" 
+          width="150" stroke="black" fill="none" 
+          stroke-width="2" />
+	<text fill="#000" font-size="14" x="1290" y="460"
+          font-family="Arial" text-anchor="middle">
+          <a href = "../AboutLondon(CourseworkStudent3).html">London</a></text>
+	</g>
+
+<g class="groupId2" >
+	<line class="shapeId2" stroke="black" stroke-width="2" 
+		  x1="1290" y1="480" x2="1290" y2="530"></line>
+  </g>
+<g class="groupId3" >
+	<rect x="1215" y="530" height="50" 
+          width="150" stroke="black" fill="none" 
+          stroke-width="2" />
+	<text fill="#000" font-size="14" x="1290" y="560"
+          font-family="Arial" text-anchor="middle">
+          <a href = "../../HTML/Pakistan/Pakistan.html">Pakistan</a></text>
+	</g>  	
+  </svg>
+
+<br>
+<a target="_blank" href="beach.jpg">
+   
+  <img onmouseover = "bigImg(this)" onmouseout="normalImg(this)" 
+  border = "1" src = "beach.jpg" alt = "beach" width = "90" height = "90">
+  
+</a>
+
+<p> As though getting a look at the island's eponymous mythical serpents wasn't reason enough to visit, 
+
+Komodo likewise happens to have one genuinely excellent pink shoreline. Between the coral-lined waters and brilliant green slopes coming out there, 
+
+you're not liable to discover another get-away spot very this beautiful. 
+
+The waters are alright to swim and swimming, yet simply utilize sound judgment (for example on the off chance that you see a Komodo winged serpent, um, remain away.).</p>
+
+
+
+<a target="_blank" href="kids.jpg">
+   
+  <img onmouseover = "bigImg(this)" onmouseout="normalImg(this)" 
+  border = "1" src = "kids.jpg" alt = "beach" width = "80" height = "70">
+  
+</a>
+
+<p> BeWILDerwood is an undertaking park for families situated in Horning, an area in the English province of Norfolk. 
+
+Self-depicted as an "inquisitive treehouse experience," the fascination is arranged in a forest territory and highlights treehouses, rope spans, slides, zip wires, 
+
+a labyrinth, and two exceptional territories for youngsters under five called "Toddlewood-on-the-Slope" and "bobby Valley". 
+
+The first marking was made by Purple Circle.</p>
+
+
+<a target="_blank" href="turkey.jpg">
+   
+  <img onmouseover = "bigImg(this)" onmouseout="normalImg(this)" 
+  border = "1" src = "turkey.jpg" alt = "beach" width = "80" height = "70">
+  
+</a>
+
+<p> Arranged in Focal Anatolia, Cappadocia is best known for its fantasy scene of irregular developments taking after stacks, cones and apexes. 
+
+Characteristic procedures, for example, old volcanic ejections and disintegration have all shaped these odd developments over the ages. 
+
+A huge number of years prior, humanity added exceptional contacts to the scene via cutting out houses, chapels and underground urban areas from the delicate shake. 
+
+The Hittites were the first to etch out underground passage buildings, looking for security from attacking Persians and Greeks. 
+
+A lot later Christians looked for asylum in Cappadocia's passages and caverns. 
+
+Today, a portion of the collapses the district are really inns and take into account voyagers..</p>
+
+
+<a target="_blank" href="istanbul.jpg">
+   
+  <img onmouseover = "bigImg(this)" onmouseout="normalImg(this)" 
+  border = "1" src = "istanbul.jpg" alt = "beach" width = "80" height = "70">
+  
+</a>
+
+<p> When filling in as the capital of the Footstool and Byzantine Realms, Istanbul today is the biggest city in Turkey and one of the biggest on the planet. 
+
+Istanbul extends over a tight strait that associates Asia and Europe, 
+
+making it the main city on the planet spreading over two landmasses. Noteworthy design, notable locales, feasting, shopping, 
+
+nightlife and outlandish air all make Istanbul a standout amongst the best places to Visit in Turkey. 
+
+The Old City is the place a large portion of the city's amazing memorable locales are discovered, which incorporate the Hagia Sophia, Blue Mosque and Topkapi Royal residence.</p>
+
+
+<a target="_blank" href="lake.jpg">
+   
+  <img onmouseover = "bigImg(this)" onmouseout="normalImg(this)" 
+  border = "1" src = "lake.jpg" alt = "beach" width = "80" height = "70">
+  
+</a>
+
+<p> APlitvice Lakes is the most established and biggest national park in the Republic of Croatia. 
+
+The recreation center is arranged in the rugged district of Croatia, between the Mala Kapela mountain run in the west and northwest, 
+
+what's more, the Lička Plješivica mountain range toward the southeast. 
+
+Officially, the recreation center falls inside two districts: Lika-Senj (90.7%) and Karlovac (9.3%)..</p>
+
+<link rel="stylesheet" href="WEB CW 1403">
+<link href="coursework.css" rel="stylesheet">
+<br>
+<div class="container">
+  <form action="action_page.php">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+	  <option value="Pakistan">Pakistan</option>
+	  <option value="German">German</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
+<br>
+<br>
+<div class="footer">
+<p>&copy; 2019 By Travel and Explore 
+<br>This page was created by: Student 4 : Atiya Hai
+<br>E-mail me on: w1690091@westminster.ac.uk <br>
+Follow us on:
+<ul class="nav nav-pills nav-stacked">
+        <class="active"><a href="https://facebook.com">Facebook|</a>
+        <a href="https://twitter.com">Twitter|</a>
+        <a href="https://instagram.com">Instagram</a>
+      </ul>  </p> 
+</div>
+</div>
+</body>
+</html>

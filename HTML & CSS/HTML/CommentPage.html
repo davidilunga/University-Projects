@@ -1,0 +1,168 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<link rel="stylesheet" type="text/css" href="../CSS/CommentCSS.css">
+<link rel="stylesheet" href="../CSS/NavBar.css">
+<title>Comments Page</title>
+
+<script>
+function increse() {
+	
+		document.getElementById("myid").style.fontSize="1.2em";
+	
+	}
+	
+	function normalise() {
+		document.getElementById("myid").style.fontSize="1em";
+	}
+	
+	function decrese() {
+		document.getElementById("myid").style.fontSize="0.7em";
+	}
+	
+
+function validateForms(){
+	var firstName = document.getElementById("FirstName").value;
+	var lastname = document.getElementById("Lastname").value;
+	var comment = document.getElementById("Comment").value;
+
+	if(document.comments.myname.value == ""){
+	alert( "Please provide your First Name!" );
+    return false;
+	}
+	
+	else if(document.comments.lastname.value == ""){
+	alert( "Please provide your Last Name!" );
+    return false;
+	}
+	
+	else if(document.comments.email.value == ""){
+		alert( "Please provide your E-mail!" );
+        return false;
+	}
+		
+	else if(document.comments.comment.value == ""){
+		alert( "Please enter your comment!" );
+        return false;
+	}
+	else{
+		alert("Hello, Dear " + firstName + " " + lastname + "\n\nyour comment: " + comment);
+		
+	}
+	
+}
+
+</script>
+<style>
+	<!---element needed for font size change buttons-->
+	
+		#myid {
+		font-size:1em;
+		
+		}
+		
+		.font-button {
+		margin-top:10px;
+		padding:10px;
+		border-radius:10px;
+		}
+		
+		button{
+			width:5%;
+		}
+	</style>	
+</head>
+<body>
+<nav class="header">
+		<ul>
+			<a href="../HTML/HomePresentation.html"><img src="../images/PresentationPage/logo5.png" width="100"></a>
+			<li><a href="../HTML/Homepage.html">Home</a></li>
+			<li><a href="../HTML/CommentPage.html">Comments</a></li>														<!-- Navigation bar at the top of the page-->
+			<li><a href="../HTML/BookingPage.html">Booking</a></li>
+			<li><a href="Quiz(CourseworkStudent3).html">Quiz</a></li>
+			<li><a href="../HTML/StudentInfo.html">Student Details</a>
+				<ul>
+					<li><a href = "../CVs/KhaloodMaqsoodCV.html">Khalood Maqsood</a></li>
+					<li><a href = "../CVs/JustynaBuckoCV.html">Justyna Bucko</a></li>
+					<li><a href = "../CVs/DavidIlungaCV.html">David Ilunga</a></li>
+					<li><a href = "../CVs/AtiyaHaiCV.html">Atiya Tul Hai</a></li>
+				</ul>
+			</li>
+			<li><a href="#">About Countries</a>
+				<ul>
+					<li><a href = "../HTML/TajMahal/index.html">Taj Mahal</a></li>
+					<li><a href = "../HTML/Tokyo/index.html">Tokyo</a></li>
+					<li><a href = "AboutLondon(CourseworkStudent3).html">London</a></li>
+					<li><a href = "../HTML/Pakistan/Pakistan.html">Pakistan</a></li>
+				</ul>
+			</li>
+			<li><a href = "../HTML/Sitemap/coursework.html">Sitemap</a></li>
+		</ul>
+	</nav>
+<!--------------------------------Content--------------------------------------->
+<div id = "myid">
+<div class="content">
+	
+	<h2>Please leave us a comment </h2>
+	<br>
+	<br>
+	<div class="font-button">
+			
+				<button onclick="increse()" id="increse">
+					+
+				</button>
+				
+				<button onclick="normalise()" id="normalise">
+					Aa
+				</button>
+				
+				<button onclick="decrese()" id="decrese">
+					-
+				</button>
+			
+			</div>
+	
+	<form action =""  name="comments"  method="post">
+		<label id="myname">First Name:</label>
+		<input type="text" name="myname" id="FirstName"><br><br>
+		
+		<label id="lastname">Last Name:</label>
+		<input type="text" name="lastname" id="Lastname"><br><br>
+		
+		<label id="email">Email:</label>
+		<input type="email" name="email"><br><br>
+		
+		<label>Rating: </label><br><br>
+		<input type="radio" name="rate" value="Very Good">Very Good<br>
+		<input type="radio" name="rate" value="Good">Good<br>
+		<input type="radio" name="rate" value="okay">Okay<br>
+		<input type="radio" name="rate" value="Poor">Poor<br><br>
+		
+		<label id="comments">Comments:</label><br>
+		<textarea name="comment" id="Comment" rows="10" cols="100"></textarea><br><br><br>
+		
+		<input type="button" onclick="validateForms()" value="Submit">
+	
+	</form>	
+	
+	
+	
+</div>
+
+
+
+
+<!-------------------------------------Footer------------------------------------->
+
+<div class="footer" style = "position:fixed">
+<p>&copy; 2019 By Travel and Explore 
+<br>This page was created by: Student 2 : Khalood Maqsood
+<br>E-mail address of student 2:<address><a href="w1687385@my.westminster.ac.uk">w1687385@my.westminster.ac.uk</a></address> </p>
+</div>
+
+
+</div>
+
+</body>
+</html>

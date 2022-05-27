@@ -1,0 +1,166 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+body{
+	background-color:#b9c0cc;
+	font-family: 'Playfair Display', serif;
+	color: black;
+}
+
+h1{
+	float:left;
+	text-align: center;
+	font-family:lucida handwriting;
+    font-size: 38pt;
+	color:#000080;
+	width:1300px;
+	height: 100px;
+	
+	
+}
+header{
+	float:left;
+	text-align: left;
+	font-family: 'Playfair Display', serif;
+    font-size: 20pt;
+	color:#00007F;
+	width:800px;
+	height:50px;
+	border: 1px solid #b9c0cc;
+	background-color:#b9c0cc;
+} 
+span:before{
+	content:'Welcome';
+	animation: animate infinite 8s;
+} 
+@keyframes animate
+{   
+    0%
+	{
+	content:'Welcome';
+	}
+	20%
+	{
+	content:'Willkommen';
+	}
+	40%
+	{
+	content:'Bienvenido';
+	}
+	60%
+	{
+	content:'أهلا بك';
+	}
+	80%{
+	content:'Benvenuto';
+	}
+	100%
+	{
+    content:'Khush Amdeed';
+	}
+} 
+img{ 
+width : 200px;
+height:140px;
+
+
+} 
+th
+{
+font-size: 2em;
+background-color: #b9c0cc;
+font-family:Arial;
+} 
+table{
+	background-color:#b9c0cc;
+	
+	width:67%;
+	text-align:center;
+	margin-right:35%
+}
+table{
+	border-collapse: collapse;
+
+	padding: 22px;
+} 
+
+table th{
+	text-align: center;
+	background-color:#b9c0cc;
+	color:#bcd6ff;
+	padding: 4px 30px 4px 8px;
+}
+table td{
+	border:1px solid #b9c0cc;
+	padding: 4px 8px;
+} 
+
+	
+
+ 
+section{
+	text-align:center;
+	font-size:14pt;
+	font-family:Arial;
+} 
+form{
+	border: 4px solid #4c506b;
+} 
+
+container{
+	background-color: #7bcbfc;
+}
+
+/*ADDING STYLE TO THE INPUT */
+input[ type=text],
+input[type=submit]{
+	width:10%;
+	padding:12px;
+	margin: 8px 0;
+	display: inline-block;
+	border:1px solid #414889;
+	box-sizing: border-box;
+} 
+/* ADDING STYLE TO THE SUBMIT BUTTON */
+INPUT[type=submit]{
+	background-color: #f44277     ;
+	color: white;
+	border: none;
+}
+input[type=submit]: hover{
+	opacity: 0.8;
+}
+
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #29293D;
+  color: white;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+}
+
+.footer a {
+	color: white;
+
+} 
+
+#text{
+	color:#00007F;
+	font-family: 'Playfair Display', serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+

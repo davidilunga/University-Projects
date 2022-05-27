@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  background-color:#ffe6cc;
+}
+
+
+/* Styling the header.... */
+.header {
+  background-color: #ffdab9;
+  padding: 20px;
+  text-align: center;
+}
+/* Styling the top navigation bar.... */
+.topnav {
+  overflow: hidden;
+  background-color:#a83461;
+}
+/* Styling the topnav links... */
+.topnav a {
+  float: left;
+  display: block;
+  color: #ffa5ca;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Changing color on hover.... */
+.topnav a:hover {
+  background-color: #f44289;
+  color: black;
+}
+.header {
+  background-color: #ffdab9;
+  padding:20px;
+  text-align:center;
+  
+}
+@keyframes animate{   
+    0%
+	{
+	content:'Welcome';
+	}
+	25%
+	{
+	content:'Willkommen';
+	}
+	50%
+	{
+	content:'Bienvenido';
+	}
+	75%
+	{
+	content:'أهلا بك';
+	}
+	100%
+	{
+    content:'Khush Amdeed';
+	}
+} 
+
+.footer {
+  background-color: #ffdab9;
+  text-align: center;
+  padding: 10px;
+}

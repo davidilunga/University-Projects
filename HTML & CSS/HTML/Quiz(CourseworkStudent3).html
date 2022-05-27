@@ -1,0 +1,434 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Tourism Quiz</title>
+		<link rel="stylesheet" href="../CSS/Coursework.css">
+		<link rel="stylesheet" href="../CSS/NavBar.css">
+		<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,900" rel="stylesheet">
+		<style>
+	<!---element needed for font size change buttons-->
+	
+		#myid {
+		font-size:1em;
+		
+		}
+		
+		.font-button {
+		margin-top:10px;
+		padding:10px;
+		border-radius:10px;
+		}
+		
+		button{
+			width:5%;
+		}
+
+	</style>
+		
+	</head>
+	<body onload="disable_quiz()">
+		<nav class="header">
+			<ul>
+				<a href="../HTML/HomePresentation.html"><img src="../images/PresentationPage/logo5.png" width="100"></a>
+				<li><a href="../HTML/Homepage.html">Home</a></li>
+				<li><a href="../HTML/CommentPage.html">Comments</a></li>														<!-- Navigation bar at the top of the page-->
+				<li><a href="../HTML/BookingPage.html">Booking</a></li>
+				<li><a href="Quiz(CourseworkStudent3).html">Quiz</a></li>
+				<li><a href="../HTML/StudentInfo.html">Student Details</a>
+					<ul>
+						<li><a href = "../CVs/KhaloodMaqsoodCV.html">Khalood Maqsood</a></li>
+						<li><a href = "../CVs/JustynaBuckoCV.html">Justyna Bucko</a></li>
+						<li><a href = "../CVs/DavidIlungaCV.html">David Ilunga</a></li>
+						<li><a href = "../CVs/AtiyaHaiCV.html">Atiya Tul Hai</a></li>
+					</ul>
+				</li>
+				<li><a href="#">About Countries</a>
+					<ul>
+						<li><a href = "../HTML/TajMahal/index.html">Taj Mahal</a></li>
+						<li><a href = "../HTML/Tokyo/index.html">Tokyo</a></li>
+						<li><a href = "AboutLondon(CourseworkStudent3).html">London</a></li>
+						<li><a href = "../HTML/Pakistan/Pakistan.html">Pakistan</a></li>
+					</ul>
+				</li>
+				<li><a href = "../HTML/Sitemap/coursework.html">Sitemap</a></li>
+			</ul>
+		</nav>
+		<div class="font-button">
+			
+				<button onclick="increse()" id="increse">
+					+
+				</button>
+				
+				<button onclick="normalise()" id="normalise">
+					Aa
+				</button>
+				
+				<button onclick="decrese()" id="decrese">
+					-
+				</button>
+			
+			</div>
+		<div id = "myid">
+		<div class = "container">	
+			<h1>Welcome to the Tourism Quiz</h1>
+			<h5>Here, we're going test ou're genral knowledge, based on famous landmarks around the world. 
+				We're going to ask you a mixture of 10 questions about famous Tourist Attractions and Capital Cites for the countries of the world. </h5><br>
+			<h5>Each question is worth 2 points and each question that is wrong, 1 mark will be deducted. </h5><br>
+			<h5>Your score will be dislayed at the end; along with he correct answers and if you choose to reset te quiz, press the reset button.</h5><br>				<!-- a little bit about what will happen on the page -->
+			
+			<form id = "quiz" name = "quiz">
+			
+				<input type = "text" id = "name" placeholder = "Please enter your name" name = "name"><br><br>
+				<input type="button" name="startButton" id = "startButton" onclick ="EasyQuizCheck(this.form);" value = "Start the Quiz"><input type="reset" name="resetButton" onclick ="restart();" id = "reset" value = "Reset"><br>
+				
+
+				<p id ="countdownTimer">Your timer will be displayed here.</p>
+				<p id = "end"></p><br>
+				<div id = "questions">
+					<p><strong>Question 1:</strong> Which one of the following landmarks can you find in Paris?</p><br>
+						<input type="radio" name = "question1"  value="Eiffel Tower" id ="EiffelTower"><label for = "EiffelTower" class="correct">Eiffel Tower</label><br>
+						<input type="radio" name = "question1"  value="Statue Of Liberty" id ="StatueOfLiberty"><label for = "StatueOfLiberty" class="incorrect">Statue Of Liberty</label><br>
+						<input type="radio" name = "question1"  value="Golden Gate Bridge" id = "GoldenGateBridge"><label for = "GoldenGateBridge" class="incorrect">Golden Gate Bridge</label><br>
+						<input type="radio" name = "question1"  value="Taj Mahal" id = "TajMahal"><label for = "TajMahal" class="incorrect">Taj Mahal</label><br>
+						
+					
+					<p id = "response1"></p><br>
+
+					<p><strong>Question 2:</strong> What is the capital of the United States?</p><br>
+						<input type="radio" name = "question2"  value="New York" id ="newyork"><label for = "newyork" class="incorrect">New York</label><br>
+						<input type="radio" name = "question2"  value="California" id = "California"><label for = "California" class="incorrect">California</label><br>
+						<input type="radio" name = "question2"  value="Florida" id = "Florida"><label for = "Florida" class="incorrect">Florida</label><br>
+						<input type="radio" name = "question2"  value="Washington D.C." id = "WashingtonDC"><label for = "WashingtonDC" class="correct">Washington D.C.</label><br>
+						
+					<p id = "response2"></p><br>
+
+					<p><strong>Question 3:</strong> What do we call the giant clock tower in Central London?</p><br>
+						<input type="text" name = "question3" id="question3"><br>
+					
+					<p id = "response3"></p><br>
+
+					<p><strong>Question 4:</strong> How many people can Wembley Stadium hold when at capacity?</p><br>
+						<input type="radio" name = "question4"  value="50000" id ="50000"><label for = "50000" class="incorrect">50,000 People</label><br>
+						<input type="radio" name = "question4"  value="90000" id = "90000"><label for = "90000" class="correct">90,000 People</label><br>
+						<input type="radio" name = "question4"  value="75000" id = "75000"><label for = "75000" class="incorrect">75,000 People</label><br>
+						<input type="radio" name = "question4"  value="110000" id = "110000"><label for = "TajMahal" class="incorrect">110,000 People</label><br>
+					
+					<p id = "response4"></p><br>
+
+					<p><strong>Question 5:</strong> In what capital city can you find the Colosseum?</p><br>
+						<input type="radio" name="question5"  value="Vatican City" id = "VaticanCity"><label for = "VaticanCity" class="incorrect">Vatican City</label><br>
+						<input type="radio" name="question5"  value="Rome" id = "Rome"><label for = "Rome" class="correct">Rome</label><br>
+						<input type="radio" name="question5"  value="Florence" id = "Florence"><label for = "Florence" class="incorrect">Florence</label><br>
+						
+					<p id = "response5"></p><br>
+
+					<p><strong>Question 6:</strong> What is the name of the museum in the UK?</p><br>
+						<input type="radio" name ="question6" class = "incorrect" value="The Louvre" id = "TheLouvre"><label for = "TheLouvre" class="incorrect">The Louvre</label><br>
+						<input type="radio" name ="question6" class = "correct" value="British Museum"id = "BritishMuseum"><label for = "BritishMuseum" class="correct">British Museum</label><br>
+						<input type="radio" name ="question6" class = "incorrect" value="Metropolitan Museum of Art" id = "metMuseum"><label for = "metMuseum" class="incorrect">Metropolitan Museum of Art</label><br>
+					
+					<p id = "response6"></p><br>
+				
+					<p><strong>Question 7:</strong> The "Christ the Redeemer" statue oversees what city in South America?</p><br>
+						<input type="radio" name="question7" value="Buenos Aires" id = "BuenosAires"><label for = "BuenosAires" class="incorrect">Buenos Aires</label><br>
+						<input type="radio" name="question7"  value="São Paulo" id = "SãoPaulo"><label for = "SãoPaulo" class="incorrect">São Paulo</label><br>
+						<input type="radio" name="question7"  value="Rio De Janeiro" id = "RioDeJaneiro"><label for = "RioDeJaneiro" class="correct">Rio De Janeiro</label><br>
+						
+					<p id = "response7"></p><br>
+				
+					<p><strong>Question 8:</strong> A famous red and white tower is found in what city in Japan?</p><br>
+						<input type="text" name="question8" id="question8"><br>
+					
+					<p id = "response8"></p><br>
+
+					<p><strong>Question 9:</strong> What is the most popular tourist attraction in London?</p><br>
+						<input type="radio" name="question9"  value="Big Ben" id = "BigBen"><label for = "BigBen" class="incorrect">Big Ben</label><br>
+						<input type="radio" name="question9"  value="London Eye" id = "LondonEye"><label for = "LondonEye" class="correct">London Eye</label><br>
+						<input type="radio" name="question9"  value="Houses Of Parliament" id = "HousesOfParliament"><label for = "HousesOfParliament" class="incorrect">Houses Of Parliament</label><br>
+					
+					<p id = "response9"></p><br>
+				
+					<p><strong>Question 10:</strong> What is the capital of the UK?</p><br>
+						<input type="text" name="question10" id="question10"><br><br>
+					
+					<p id = "response10"></p><br>
+				
+					<input type = "button" onclick = "end();" id= "Finish" value = "Finish"><br>
+				</div>
+				<br>
+			</form>
+		</div>
+		<div class = "footer">
+			<p>&copy; 2019 By Travel and Explore 
+					
+					<br>This page was created by: Student 3 : David Ilunga
+					
+					<br>E-mail address of student 3:<address><a href="mailto:w1712616@my.westminster.ac.uk">w1712616@my.westminster.ac.uk</a></address></p>
+		</div>
+		</div>
+		<script>
+			var userName;
+			var doubleCheck;
+			var question1_checked;
+			var endTimerId;
+			var makeSure;
+			var t;
+			var score = 0;
+			var finish_button = document.getElementById("Finish")
+			var timeinterval;
+			var correctAnswers = document.getElementsByClassName("correct");
+			var incorrectAnswers = document.getElementsByClassName("incorrect");
+			var right_answer = document.getElementsByClassName("right");
+			var wrong_answer = document.getElementsByClassName("wrong");
+
+			function EasyQuizCheck(form){
+				userName = form.name.value;
+				if (userName != ""){
+					doubleCheck = confirm("Hello "+userName+". Are you sure you want to continue? Ok for Yes and Cancel for No.");
+					if (doubleCheck == true){
+						alert("Please be ready to start.");											// asking to make sure they're ready to take the quiz
+						startTimer();
+						undisable_quiz();
+						} else if (doubleCheck == false){
+							alert("Okay when you're ready, please click Start.")
+						}
+				}else{
+					alert("This is an invalid name. Please enter a valid name.")
+				}
+			}
+
+			function restart(){
+			for (var i = 0; i<correctAnswers.length; i++){
+				correctAnswers[i].style.color = "black";
+				correctAnswers[i].style.fontWeight = "normal";
+				document.body.style.backgroundColor = "#c2ccd6";
+			}
+
+			for (var i = 0; i<incorrectAnswers.length; i++){
+				incorrectAnswers[i].style.color = "black";
+			}
+			score = 0;
+			document.getElementById("countdownTimer").innerHTML = "Your timer will be displayed here.";
+			document.getElementById("end").innerHTML = "";
+			document.getElementById("response1").innerHTML = "";
+			document.getElementById("response2").innerHTML = "";
+			document.getElementById("response3").innerHTML = "";
+			document.getElementById("response4").innerHTML = "";
+			document.getElementById("response5").innerHTML = "";
+			document.getElementById("response6").innerHTML = "";
+			document.getElementById("response7").innerHTML = "";
+			document.getElementById("response8").innerHTML = "";
+			document.getElementById("response9").innerHTML = "";
+			document.getElementById("response10").innerHTML = "";
+			}
+
+			function startTimer(){
+				
+			var timeLeft = 1.5;														// timer for the quiz;
+			var current_time = Date.parse(new Date());
+			var deadline = new Date(current_time + timeLeft*60*1000);
+
+			if ( document.getElementById("startButton").value == "Start the Quiz" ){
+				run_clock('countdownTimer',deadline);
+				undisable_quiz()
+				}
+			}
+
+			function time_remaining(endtime){
+				var total = Date.parse(endtime) - Date.parse(new Date());								// check current date and time against the new date and time to find the difference
+				var seconds = Math.floor( (total/1000) % 60 );											// between the two times that were saved.
+				var minutes = Math.floor( (total/1000/60) % 60 );
+				return {'total':total,'minutes':minutes, 'seconds':seconds};
+			}
+
+			function run_clock(id,endtime){
+				var clock = document.getElementById(id);
+				function update_clock(){
+					t = time_remaining(endtime);
+					countdownTimer.innerHTML = "You have "+t.minutes+' minutes '+t.seconds+' seconds remaining.<br>';		// display the timer in the position of th "countdownTimer" id
+					if(t.total < 0){ 
+						clearInterval(timeinterval); 
+						alert("The timer has expired. The quiz is over. Let's see how you did.");			// When the timer ends, it will show an alert saying the time is up
+						clearTimeout(timeinterval);
+						countdownTimer.innerHTML = "The timer has expired. The quiz is over. Let's see how you did.";
+						//disable_quiz();				//  disables the quiz so that answers cannot be changed
+						mark_quiz()				//	runs the function to mark the quiz
+					}
+				}
+				update_clock();
+				timeinterval = setInterval(update_clock,1000);
+			}
+
+			function disable_quiz(){
+				document.getElementById("questions").disabled = true;                         
+				// disables the radio button until start button is pressed
+				var nodes = document.getElementById("questions").getElementsByTagName('*');
+					for(var i = 0; i < nodes.length; i++){                                        
+					// '*' cycles through all the elements in "questions" id and disables all inside
+						nodes[i].disabled = true;
+					}
+			}
+
+			function undisable_quiz(){
+				document.getElementById("questions").disabled = false;                         
+				// enables the radio button until the timer runs out
+				var nodes = document.getElementById("questions").getElementsByTagName('*');
+				for(var i = 0; i < nodes.length; i++){                                        
+				// '*' cycles through all the elements in "questions" id and enables all inside it
+					nodes[i].disabled = false;
+				}
+			}
+
+			function getRadioValue( radioArray ) {
+			var i;
+			for ( i = 0; i < radioArray.length; i++ ) {
+				if ( radioArray[ i ].checked ) { 
+					return radioArray[ i ].value;
+				}
+			}
+			return "";
+			}
+
+			function end(){
+			makeSure = confirm("Are you sure you want to hand in the quiz? You still have some time on the clock.");
+			if (makeSure == true){
+				clearInterval(timeinterval); 
+				clearTimeout(timeinterval);
+				countdownTimer.innerHTML = "The quiz is over. Let's see how you did.";
+				disable_quiz();
+				mark_quiz();
+			}
+			}
+
+			function mark_quiz(){
+
+				if (document.getElementById("EiffelTower").checked == true){
+						score += 2;
+						document.getElementById("response1").innerHTML = "You selected the correct answer. That's +2 marks.<span class = 'correct'>&checkmark;</span>";
+					} else if (document.getElementById("EiffelTower").checked != true){
+						score -= 1;
+						document.getElementById("response1").innerHTML = "You selected the wrong answer. The correct answer was Eiffel Tower. That's -1 mark.<span class = 'incorrect'>&cross;</span>";
+						}
+
+				if (document.getElementById("WashingtonDC").checked == true){
+						score += 2;
+						document.getElementById("response2").innerHTML = "You selected the correct answer. That's +2 marks.<span class = 'correct'>&checkmark;</span>";
+					} else if (document.getElementById("WashingtonDC").checked != true){
+						score -= 1;
+						document.getElementById("response2").innerHTML = "You selected the wrong answer. The correct answer was Washington D.C. . That's -1 mark.<span class = 'incorrect'>&cross;</span>";
+						}
+				
+				var question3 = document.getElementById("question3").value;
+				question3 = question3.toLowerCase();
+				if (question3.value == "big ben" ){
+						score += 2;
+						document.getElementById("response3").innerHTML = "You selected the correct answer. That's +2 marks.<span class = 'correct'>&checkmark;</span>";
+					} else if (document.getElementById("question3").value != "big ben"){
+						score -= 1;
+						document.getElementById("response3").innerHTML = "You selected the wrong answer. That's -1 mark.<span class = 'incorrect'>&cross;</span>";
+						}
+
+				if (document.getElementById("90000").checked == true){
+						score += 2;
+						document.getElementById("response4").innerHTML = "You selected the correct answer. That's +2 marks.<span class = 'correct'>&checkmark;</span>";
+					} else if (document.getElementById("90000").checked != true){
+						score -= 1;
+						document.getElementById("response4").innerHTML = "You selected the wrong answer. The correct answer was 90,000 seats. That's -1 mark.<span class = 'incorrect'>&cross;</span>";
+						}
+
+				if (document.getElementById("Rome").checked == true){
+						score += 2;
+						document.getElementById("response5").innerHTML = "You selected the correct answer. That's +2 marks.<span class = 'correct'>&checkmark;</span>";
+					} else if (document.getElementById("Rome").checked != true){
+						score -= 1;
+						document.getElementById("response5").innerHTML = "You selected the wrong answer. The correct answer was Rome. That's -1 mark.<span class = 'incorrect'>&cross;</span>";
+						}
+
+				if (document.getElementById("BritishMuseum").checked == true){
+						score += 2;
+						document.getElementById("response6").innerHTML = "You selected the correct answer. That's +2 marks.<span class = 'correct'>&checkmark;</span>";
+					} else if (document.getElementById("BritishMuseum").checked != true){
+						score -= 1;
+						document.getElementById("response6").innerHTML = "You selected the wrong answer. The correct answer was British Museum. That's -1 mark.<span class = 'incorrect'>&cross;</span>";
+						}
+
+				if (document.getElementById("RioDeJaneiro").checked == true){
+						score += 2;
+						document.getElementById("response7").innerHTML = "You selected the correct answer. That's +2 marks.<span class = 'correct'>&checkmark;</span>";
+					} else if (document.getElementById("RioDeJaneiro").checked != true){
+						score -= 1;
+						document.getElementById("response7").innerHTML = "You selected the wrong answer. The correct answer was Rio De Janeiro. That's -1 mark.<span class = 'incorrect'>&cross;</span>";
+						}
+
+				var question8 = document.getElementById("question8").value;
+				question8 = question8.toLowerCase();
+				if (question8 == "tokyo"){
+						score += 2;
+						document.getElementById("response8").innerHTML = "You selected the correct answer. That's +2 marks.<span class = 'correct'>&checkmark;</span>";
+					} else if (document.getElementById("question8").value != "Tokyo" || document.getElementById("question8").value != "tokyo"){
+						score -= 1;
+						document.getElementById("response8").innerHTML = "You selected the wrong answer. The correct answer was Tokyo. That's -1 mark.<span class = 'incorrect'>&cross;</span>";
+						}
+
+				if (document.getElementById("LondonEye").checked == true){
+						score += 2;
+						document.getElementById("response9").innerHTML = "You selected the correct answer. That's +2 marks.<span class = 'correct'>&checkmark;</span>";
+					} else if (document.getElementById("LondonEye").checked != true){
+						score -= 1;
+						document.getElementById("response9").innerHTML = "You selected the wrong answer. The correct answer was London Eye. That's -1 mark.<span class = 'incorrect'>&cross;</span>";
+						}
+				
+				var question10 = document.getElementById("question10").value;
+				question10 = question10.toLowerCase();
+				if (question10 == "london"){
+						score += 2;
+						document.getElementById("response10").innerHTML = "You selected the correct answer. That's +2 marks<span class = 'correct'>&checkmark;</span>.";
+					} else if (document.getElementById("question10").value != "London" || document.getElementById("question10").value != "london"){
+						score -= 1;
+						document.getElementById("response10").innerHTML = "You selected the wrong answer. The correct answer was London. That's -1 mark.<span class = 'incorrect'>&cross;</span>";
+						}
+
+				console.log("inside mark quiz");
+				console.log(correctAnswers.length);
+				for (var i = 0; i<correctAnswers.length; i++){
+					correctAnswers[i].style.color = "#00ff04";
+					correctAnswers[i].style.fontWeight = "bold";
+				}
+
+				for (var i = 0; i<incorrectAnswers.length; i++){
+					incorrectAnswers[i].style.color = "#ff0000";
+				}
+
+
+				if (score  < 0){
+					document.getElementById("end").innerHTML = "So "+userName+" your final score is "+score+" out of 20. The reason for that is because you got most of the questions wrong.";
+					document.body.style.backgroundColor = "#930000";
+					} else if (score >= 0 && score <= 7){
+						document.getElementById("end").innerHTML = "So "+userName+" your final score is "+score+" out of 20. I guess some revision is required.";
+						document.body.style.backgroundColor = "#930000";
+						} else if (score > 7 && score <= 14){
+							document.getElementById("end").innerHTML = "So "+userName+" your final score is "+score+" out of 20. That is a pretty good score.";
+							document.body.style.backgroundColor = "#006d26";
+							} else if (score > 14 && score <= 20){
+								document.getElementById("end").innerHTML = "So "+userName+" your final score is "+score+" out of 20. The is an exceptional score. Well done.";
+								document.body.style.backgroundColor = "#006d26";
+								}
+			}
+			
+			function increse() {
+	
+		document.getElementById("myid").style.fontSize="1.2em";
+	
+	}
+	
+	function normalise() {
+		document.getElementById("myid").style.fontSize="1em";
+	}
+	
+	function decrese() {
+		document.getElementById("myid").style.fontSize="0.7em";
+	}
+		</script>
+	</body>
+</html>

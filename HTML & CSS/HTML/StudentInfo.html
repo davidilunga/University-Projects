@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name "viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+		<link rel ="stylesheet" href="../CSS/StudentInfo.css"/>
+		<link rel="stylesheet" href="../CSS/NavBar.css">
+		<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,900" rel="stylesheet"> 
+		<title>Student Informtion</title>
+		<style>
+	<!---element needed for font size change buttons-->
+	
+		#myid {
+		font-size:1em;
+		
+		}
+		
+		.font-button {
+		margin-top:10px;
+		padding:10px;
+		border-radius:10px;
+		}
+		
+		button{
+			width:5%;
+		}
+	</style>
+		
+	</head>
+	
+	<body>
+	<nav class="header">
+			<ul>
+				<a href="../HTML/HomePresentation.html"><img src="../images/PresentationPage/logo5.png" width="100"></a>
+				<li><a href="../HTML/Homepage.html">Home</a></li>
+				<li><a href="../HTML/CommentPage.html">Comments</a></li>														<!-- Navigation bar at the top of the page-->
+				<li><a href="../HTML/BookingPage.html">Booking</a></li>
+				<li><a href="../HTML/Quiz(CourseworkStudent3).html">Quiz</a></li>
+				<li><a href="../HTML/StudentInfo.html">Student Details</a>
+					<ul>
+						<li><a href = "../CVs/KhaloodMaqsoodCV.html">Khalood Maqsood</a></li>
+						<li><a href = "../CVs/JustynaBuckoCV.html">Justyna Bucko</a></li>
+						<li><a href = "../CVs/DavidIlungaCV.html">David Ilunga</a></li>
+						<li><a href = "../CVs/AtiyaHaiCV.html">Atiya Tul Hai</a></li>
+					</ul>
+				</li>
+				<li><a href="#">About Countries</a>
+					<ul>
+						<li><a href = "../HTML/TajMahal/index.html">Taj Mahal</a></li>
+						<li><a href = "../HTML/Tokyo/index.html">Tokyo</a></li>
+						<li><a href = "../HTML/AboutLondon(CourseworkStudent3).html">London</a></li>
+						<li><a href = "../HTML/Pakistan/Pakistan.html">Pakistan</a></li>
+					</ul>
+				</li>
+				<li><a href = "../HTML/Sitemap/coursework.html">Sitemap</a></li>
+			</ul>
+		</nav>
+		
+	<body>
+	<div class="font-button">
+			
+				<button onclick="increse()" id="increse">
+					+
+				</button>
+				
+				<button onclick="normalise()" id="normalise">
+					Aa
+				</button>
+				
+				<button onclick="decrese()" id="decrese">
+					-
+				</button>
+			
+			</div>
+	<div id = "myid">
+	<h2>Student Informtion</h2>
+	<br>
+	<p>Hover over our image to see what Student we are in the Coursewrok..</p>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+		<div class = "row">
+			
+			<div class = "column">
+				<div class="container">
+				<img src="../images/CVPictures/JustynaBucko.jpg" class="image" height = "300" class = "center">
+					<div class="overlay">
+						<div class="text">Hello. My name is Justyna Bucko and I am Student 1. My student ID is w1692858. Click <a href = "../CVs/JustynaBuckoCV.html">here</a> to view my CV.</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class = "column">
+				<div class="container">
+				<img src = "../images/CVPictures/KhaloodMaqsood.jpg" alt="Avatar" class="image" height = "250" class = "center">
+				<div class="overlay">
+					<div class="text">Hello. My name is Khalood Maqsood and I am Student 2. My student ID is w1687385. Click <a href = "../CVs/KhaloodMaqsoodCV.html">here</a> to view my CV.</div>
+				</div>
+				</div>
+			</div>
+			
+			<div class = "column">
+				<div class="container">
+				  <img src = "../images/CVPictures/DavidIlunga(1).jpg" alt="Avatar" class="image" height = "300" class = "center">
+				  <div class="overlay">
+					<div class="text">Hi. My name is David Ilunga and I am Student 3. My student ID is w1712616. Click <a href = "../CVs/DavidIlungaCV.html">here</a> to view my CV.</div>
+				  </div>
+				</div>
+			</div>
+			
+			<div class = "column">
+				<div class="container">
+				  <img src = "../images/CVPictures/AtiyaHai.jpg" alt="Avatar" class="image" height = "300" class = "center">
+				  <div class="overlay">
+					<div class="text">Hello. My name is Atiya Tul Hai and I am Student 4. My student ID is w1690091. Click <a href = "../CVs/AtiyaHaiCV.html">here</a> to view my CV.</div>
+				  </div>
+				</div>
+			</div>
+			
+		</div>
+		<br>
+		<p class = "center">Our topic of choice was Tourism beacuse it is a topic that we felt we could all relate to as everyone does travel quite often.</p>
+		
+		<div class = "footer">
+			<p>&copy; 2019 By Travel and Explore 
+					
+					<br>This page was created by: Student 3 : David Ilunga
+					
+					<br>E-mail address of student 3:<address><a href="mailto:w1712616@my.westminster.ac.uk">w1712616@my.westminster.ac.uk</a></address></p>
+		</div>
+		</div>
+		<script>
+		function increse() {
+	
+			document.getElementById("myid").style.fontSize="1.2em";
+		
+		}
+		
+		function normalise() {
+			document.getElementById("myid").style.fontSize="1em";
+		}
+		
+		function decrese() {
+			document.getElementById("myid").style.fontSize="0.7em";
+		}
+		</script>
+	</body>
+</html>
