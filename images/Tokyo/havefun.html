@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	
+		<meta charset="UTF-8"/>
+		<meta name "viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+		<link rel ="stylesheet" href="style.css"/>
+		<title>Visit Tokyo!</title>
+
+	</head>
+	
+	
+	<body>
+	
+	<script>
+	
+	function increse() {
+	
+		document.getElementById("myid").style.fontSize="1.2em";
+	
+	}
+	
+	function normalise() {
+		document.getElementById("myid").style.fontSize="1em";
+	}
+	
+	function decrese() {
+		document.getElementById("myid").style.fontSize="0.7em";
+	}
+	
+	</script>
+	
+	
+	
+	
+	<style>
+	
+	.havefun-container {
+	
+	z-index:-1;
+	position:absolute;
+	top:20%;
+	left:30%;
+	max-width:700px;
+	color:#555;
+	padding-top:20px;
+	padding-bottom:100px;
+	
+	}
+	
+	.havefun-container h1 {
+	color:#8f3d3d;
+	font-size:50px;
+	padding-bottom:20px;
+	padding-top:20px;
+	}
+	
+	img {
+	 -webkit-filter: grayscale(100%);
+	filter: grayscale(60%);
+	transition:ease 0.5s;
+	padding-bottom:20px;
+	padding-top:20px;
+	}
+	
+	
+	img:hover {
+	 -webkit-filter: grayscale(100%);
+	filter: grayscale(0%);
+	}
+	
+	
+	</style>
+	
+	<div id="myid">
+	
+	
+	<div class="navbar">
+		
+			<div id="logo">
+			
+				<img src="">
+			
+			</div>
+			
+		<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="discover.html">Discover</a></li>
+				<li><a href="eat.html">Eat</a></li>
+				<li><a href="shop.html">Shop</a></li>
+				<li><a href="havefun.html">Have Fun!</a></li>
+				
+			</ul>
+			
+		</div>
+		
+		
+		<div class="havefun-container">
+		
+			<div id="events">
+			
+				<h1>Events</h1>
+				<p>A few manga and anime grand events are held in the course of a year. In particular, the AnimeJapan (formerly known as Tokyo Anime Fair), held annually at Odaiba's Big Sight convention center, is one of the largest animation related events in the world. Another noteworthy event is Comiket, a huge comic book fair which attracts hundreds of thousands of people. It is held biannually, also at Big Sight in Tokyo.</p>
+				
+				
+				<img src="manga.jpg" height="210">
+				<img src="anime.jpg" height="210">
+				
+			</div>
+			
+			<div id="festivals">
+				<h1>Festivals</h1>
+				<p>There are countless local festivals (matsuri) in Japan because almost every shrine celebrates one of its own. Most festivals are held annually and celebrate the shrine's deity or a seasonal or historical event. Some festival are held over several days.
+
+				<br><br>
+				An important element of Japanese festivals are processions, in which the local shrine's kami (Shinto deity) is carried through the town in mikoshi (palanquins). It is the only time of the year when the kami leaves the shrine to be carried around town.</p>
+				
+				
+				<img src="festival1.jpg" height="230">
+				<img src="festival2.jpg" height="230">
+				
+			</div>
+			
+		
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		<div class="menu">
+		
+		
+						<div class="Discover">
+				<h2>Discover</h2>
+				<ul>
+					<li><a href="#culture">Culture</a></li>
+					<li><a href="#nature">Nature</a></li>
+				</ul>
+			</div>
+		
+			<div class="Eat">
+				<h2>Eat</h2>
+				<ul>
+					<li><a href="eat.html">Sushi</a></li>
+					<li><a href="eat.html">Street Food</a></li>
+					<li><a href="eat.html">Fine Dining</a></li>
+				</ul>
+			</div>
+		
+			<div class="Shop">
+				<h2>Shop</h2>
+				<ul>
+					<li><a href="shop.html">Shopping malls</a></li>
+					<li><a href="shop.html">Traditional Bazars</a></li>
+				</ul>
+			</div>
+		
+			<div class="HaveFun">
+				<h2>Have fun!</h2>
+				<ul>
+					<li><a href="havefun.html">Events</a></li>
+					<li><a href="havefun.html">Festivals</a></li>
+				</ul>
+			</div>
+			
+			<div class="font-change">
+			
+				<button onclick="increse()" id="increse">
+					+
+				</button>
+				
+				<button onclick="normalise()" id="normalise">
+					Aa
+				</button>
+				
+				<button onclick="decrese()" id="decrese">
+					-
+				</button>
+			
+			</div>
+			
+			
+		
+		</div>
+		
+		<footer>
+		
+		</footer>
+		
+		</div>
+	
+	
+	</body>
+	</html>
